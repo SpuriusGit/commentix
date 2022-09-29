@@ -1,0 +1,96 @@
+.investors-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.investor-list-item {
+    margin: 20px;
+}
+
+.investor {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.investor p,
+.slider-item .contacts-block p,
+.investor-description p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #07131B;
+}
+
+.investor-description span {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #07131B;
+}
+
+.investor .head-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.investor-company,
+.investor-name,
+.investor-phone,
+.investor-email,
+.investor-site {
+    display: flex;
+    margin: 15px 0px;
+    align-items: center;
+}
+.investor-company .bold-text {
+    margin: 0px 10px;
+}
+.bold-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #07131B;
+}
+.investor-icon {
+    margin-right: 10px;
+}
+
+.investor-address .bold-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #07131B;
+}
+
+.investor-description {
+    margin-top: 20px;
+}
+
+
+.offer-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.offer-item h3 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #07131B;
+}
