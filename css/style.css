@@ -22,6 +22,11 @@ h2 {
     text-align: center;
     color: #FFFFFF;
 }
+
+button {
+    cursor: pointer;
+}
+
 .subtitle {
     font-family: 'Rubik';
     font-style: normal;
@@ -38,6 +43,16 @@ h2 {
 .intro-text {
     margin-right: -50px;
 }
+
+.intro-text,
+.intro-img {
+    padding: 50px;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
 .buy-contacts {
     background-color: #1A7296;
     width: 275px;
@@ -107,16 +122,27 @@ h2 {
 .navbar-block:nth-child(2) {
     align-items: flex-end;
 }
+.content {
+    position: relative;
+    padding-top: 50px;
+}
+
 .content,
 .filter-head {
     display: flex;
 }
+
 .filter-head {
     margin-left: 15px;
     align-items: center;
 }
 .filter-icon {
     margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/filter-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .filter-panel {
     background-color: #fff;
@@ -125,6 +151,7 @@ h2 {
     min-width: 350px;
     padding: 20px;
     max-height: 600px;
+    height: fit-content;
 }
 .filter-list {
     list-style: none;
@@ -152,6 +179,12 @@ h2 {
 .filtered-list-item.active ul {
     display: block;
 }
+.filtered-list-item.active .filter-item-text {
+    border-bottom: 1px solid #1F8A70;
+}
+.filtered-list-item.active .dropdown-icon {
+    transform: rotate(225deg);
+}
 
 .filter-list li {
     display: flex;
@@ -168,6 +201,7 @@ h2 {
     border-left: 1px solid #07131B;
     transform: rotate(45deg);
     cursor: pointer;
+    transition: all 300ms;
 }
 
 
@@ -304,6 +338,7 @@ h2 {
 
 .slider-img-block img {
     height: 100%;
+    width: 100%;
 }
 
 .investment-price {
@@ -337,9 +372,12 @@ h2 {
     border-radius: 9px;
     padding: 10px;
 }
-
+.slider-img-block {
+    width: 50%;
+}
 .slider-content-block {
     padding: 20px;
+    width: 50%;
 }
 
 .slider-content-block h3 {
@@ -438,6 +476,7 @@ h2 {
 }
 .swiper-wrapper {
     padding-top: 85px;
+    padding-bottom: 100px;
 }
 .swiper-button-next, 
 .swiper-button-prev {

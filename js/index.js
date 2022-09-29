@@ -30,6 +30,8 @@ var swiper = new Swiper(".swiper", {
 // filter dropdown
 
 const filterElement = document.querySelectorAll('.filtered-list-item');
+const filterIcon = document.querySelector('.filter-icon');
+const filterPanel = document.querySelector('.filter-panel');
 
 for(let i of filterElement) {
   i.addEventListener('click', () => {
@@ -37,3 +39,8 @@ for(let i of filterElement) {
   });
 }
 
+filterIcon.addEventListener('click', () => {
+  if (window.innerWidth < 1200) {
+    filterPanel.classList.toggle("active");
+  }
+});
