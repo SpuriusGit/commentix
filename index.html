@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/checkbox.css">
     <link rel="stylesheet" href="css/investors.css">
     <title>Document</title>
 </head>
@@ -49,10 +50,40 @@
                         <p>Filter</p>
                     </div>
                     <ul class="filter-list">
-                        <li><p>Country</p><span class="dropdown-icon"></span></li>
-                        <li><p>City</p><span class="dropdown-icon"></span></li>
-                        <li><p>Categories</p><span class="dropdown-icon"></span></li>
-                        <li><p>Rounds</p><span class="dropdown-icon"></span></li>
+                        <li class="filtered-list-item"><div class="filter-item-text"><p>Country</p><span class="dropdown-icon"></span></div>
+                            <ul class="unstyled centered">
+                                <li>
+                                  <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                  <label for="styled-checkbox-1">Ukraine</label>
+                                </li>
+                                <li>
+                                  <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                                  <label for="styled-checkbox-2">Poland</label>
+                                </li>
+                                <li>
+                                  <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
+                                  <label for="styled-checkbox-3">United States</label>
+                                </li>
+                              </ul>
+                        </li>
+                        <li class="filtered-list-item"><div class="filter-item-text"><p>City</p><span class="dropdown-icon"></span></div>
+                            <ul class="unstyled centered">
+                                <li>
+                                  <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                                  <label for="styled-checkbox-4">New York</label>
+                                </li>
+                                <li>
+                                  <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                                  <label for="styled-checkbox-5">Las Vegas</label>
+                                </li>
+                                <li>
+                                  <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
+                                  <label for="styled-checkbox-6">Miami</label>
+                                </li>
+                              </ul>
+                        </li>
+                        <li class="filtered-list-item"><div class="filter-item-text"><p>Categories</p><span class="dropdown-icon"></span></div></li>
+                        <li class="filtered-list-item"><div class="filter-item-text"><p>Rounds</p><span class="dropdown-icon"></span></div></li>
                     </ul>
                 </div>
                 <div class="tab-content">

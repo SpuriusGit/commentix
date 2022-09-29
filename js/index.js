@@ -25,3 +25,15 @@ var swiper = new Swiper(".swiper", {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+// filter dropdown
+
+const filterElement = document.querySelectorAll('.filtered-list-item');
+
+for(let i of filterElement) {
+  i.addEventListener('click', () => {
+    i.classList.toggle("active");
+  });
+}
+

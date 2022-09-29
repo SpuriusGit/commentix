@@ -124,7 +124,6 @@ h2 {
     width: 300px;
     min-width: 350px;
     padding: 20px;
-    height: 300px;
     max-height: 600px;
 }
 .filter-list {
@@ -140,10 +139,24 @@ h2 {
     color: #07131B;
 }
 
-.filter-list li {
+.filter-item-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.filtered-list-item ul {
+    display: none;
+}
+
+.filtered-list-item.active ul {
+    display: block;
+}
+
+.filter-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 15px;
     cursor: pointer;
 }
@@ -446,11 +459,11 @@ h2 {
 }
 
 .swiper-button-prev {
-    left: calc(50% - 80px);
+    left: calc(65% - 80px);
 }
 
 .swiper-button-next {
-    right: calc(50% - 80px);
+    right: calc(35% - 80px);
 }
 
 .swiper-button-next:after {
