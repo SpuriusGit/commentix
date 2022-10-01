@@ -82,6 +82,7 @@
     }
     .footer-copyright-md {
         display: block;
+        margin-top: 10px;
     }
     .footer-copyright {
         display: none;
@@ -215,14 +216,82 @@
     .intro-block .buy-contacts {
         display: none;
     }
+    .filter-list p {
+        margin: 5px;
+    }
     .filter-list p, 
-    .filter-head p {
+    .filter-head p,
+    .styled-checkbox + label,
+    .slider-category-block .category,
+    .investor p, 
+    .slider-item .contacts-block p, 
+    .investor-description p,
+    .export-section p,
+    .investor-address .bold-text {
         font-size: 12px;
         line-height: 14px;
+    }
+    .filter-list li {
+        margin: 10px 5px;
+    }
+    .investment-price p,
+    .investment-price span,
+    .slider-link a,
+    .revenue-block p,
+    .investor-description span,
+    .export-button,
+    .buy-contacts,
+    .investor-company .bold-text,
+    .offer-item h3 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .slider-link{
+        margin-right: 20px;
+    }
+    .payments-options {
+        margin-top: 30px;
+    }
+    .buttons-section {
+        text-align: center;
+    }
+    .offer-item {
+        flex-direction: column;
+    }
+    .offer-item .buy-contacts {
+        margin-top: 15px;
+    }
+    .export-button {
+        height: 35px;
     }
  }
 
  @media (max-width: 576px) { 
+    .statistics-block h2 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .offers-block {
+        margin-top: -50px;
+    }
+    .buttons-section .buy-contacts {
+        margin: 0px 10px;
+    }
+    .buy-contacts {
+        width: 160px;
+        height: 50px;
+    }
+    .main-content-block {
+        padding-bottom: 0px;
+    }
+    .investors-list {
+        padding-bottom: 50px;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: none;
+    }
     .tab {
         height: auto;
         font-size: 14px;
@@ -232,7 +301,8 @@
         line-height: 24px;
     }
     .contacts-count span, 
-    .contacts-count p {
+    .contacts-count p,
+    .statistics-item p {
         font-size: 14px;
         line-height: 17px;
     }
