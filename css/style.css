@@ -96,6 +96,9 @@ button {
 .contacts-count {
     display: flex;
 }
+.contacts-count p {
+    margin-left: 10px;
+}
 .contacts-count span,
 .contacts-count p {
     font-family: 'Rubik';
@@ -118,6 +121,7 @@ button {
     justify-content: center;
     align-items: flex-start;
     margin: 50px 0;
+    padding: 30px;
 }
 .navbar-block:nth-child(2) {
     align-items: flex-end;
@@ -511,4 +515,18 @@ button {
 
 .swiper-button-prev::after {
     margin-right: 10px;
+}
+
+.copyright {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #07131B;
+    opacity: 0.5;
+}
+
+.footer-copyright-md {
+    display: none;
 }

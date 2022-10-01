@@ -2,31 +2,39 @@
 
  }
 
- /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
 
- }
 
- /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) { 
-    .slider-item {
-        flex-direction: column;
-        border-radius: 50px;
-    }
-    .slider-img-block,
-    .slider-content-block {
-        width: 100%;
-    }
 
- }
 
- /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1100px) { 
 
  }
 
-/*  XX-Large devices (larger desktops, 1400px and up) */
 @media (max-width: 1200px) { 
+    .statistics-info {
+        width: 100%;
+        max-width: 1080px;
+    }
+    .export-button {
+        margin-top: 10px;
+    }
+    .statistics-block {
+        flex-direction: column-reverse;
+    }
+    .offers-block {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .statistics-info, 
+    .offers-block {
+        min-height: 250px;
+        align-items: center;
+    }
+    .export-section {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0px;
+    }
     .filter-panel {
         position: absolute;
         top: 40px;
@@ -83,5 +91,73 @@
     }
     .swiper-button-prev {
         left: calc(50% - 80px);
+    }
+    .footer-copyright-md {
+        display: block;
+    }
+    .footer-copyright {
+        display: none;
+    }
+ }
+
+ @media (max-width: 992px) { 
+    .intro-text {
+        margin: 0;
+        padding: 0;
+    }
+    .slider-item {
+        flex-direction: column;
+        border-radius: 50px;
+    }
+    .slider-img-block,
+    .slider-content-block {
+        width: 100%;
+    }
+    .offers-block {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+    .export-section {
+        flex-direction: row;
+        align-items: center;
+        width: calc(100% - 60px);
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+ }
+
+ @media (max-width: 768px) { 
+    .investor .head-info {
+        flex-direction: column;
+    }
+    .content-navbar {
+        flex-direction: column-reverse;
+    }
+    .navbar-block {
+        width: 100%;
+        margin: 0;
+    }
+    .navbar-block h2 {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .filter-panel {
+        left: calc(100% - 380px);
+        top: -20px;
+    }
+    .filter-panel.active {
+        border-radius: 12px 0px 12px 12px;
+    }
+    .filter-panel:not(.active) .filter-icon {
+        left: calc(100% - -270px);
+    }
+    .content {
+        padding-top: 0;
+    }
+    .filter-panel.active .filter-icon {
+        top: -35px;
+        left: calc(100% - 40px);
     }
  }
