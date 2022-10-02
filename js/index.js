@@ -53,3 +53,29 @@ filterIcon.addEventListener('click', () => {
     filterPanel.classList.toggle("active");
   }
 });
+
+
+// modal 
+
+document.querySelector('.modal-open').addEventListener('click', () => {
+  document.querySelector('.modal-window').classList.add('active');
+});
+document.querySelector('.modal-background').addEventListener('click', () => {
+  document.querySelector('.modal-window').classList.remove('active');
+});
+document.querySelector('.modal-close').addEventListener('click', () => {
+  document.querySelector('.modal-window').classList.remove('active');
+});
+
+// form options
+
+const options = document.querySelectorAll('.proposal-option');
+
+for (let i of options) {
+  i.addEventListener('click', () => {
+    for(let j of options) {
+      j.classList.remove('active');
+    }
+    i.classList.add('active');
+  });
+}

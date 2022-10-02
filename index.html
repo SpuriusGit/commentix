@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/checkbox.css">
     <link rel="stylesheet" href="css/investors.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Commentix</title>
 </head>
@@ -85,9 +86,10 @@
                         <li><div class="filter-item-text"><p>Rounds</p><span class="dropdown-icon"></span></div></li>
                         <li><div class="filter-item-text investors-mode"><p>Money</p><span class="dropdown-icon"></span></div></li>
                         <li><div class="filter-item-text investors-mode"><p>Revenue 6 months</p><span class="dropdown-icon"></span></div></li>
+                        <button class="buy-contacts">Apply</button>
                     </ul>
                 </div>
-                <button class="add-button-m">Add +</button>
+                <button class="add-button-m modal-open">Add +</button>
                 <div class="tab-content">
                     <div id="home" data-tab-content class="active">
                       <div class="investors-tab-container">
@@ -383,7 +385,7 @@
                                 </div>
                                 <!-- If we need pagination -->
                                 <div class="slider-add-button">
-                                    <button class="add-button">Add +</button>
+                                    <button class="add-button modal-open">Add +</button>
                                 </div>
                               
                                 <!-- If we need navigation buttons -->
@@ -420,7 +422,7 @@
                 <div class="buttons-section">
                     <button class="buy-contacts">Open 5 contacts<br><span class="bold">Free</span></button>
                     <button class="buy-contacts">Open all contacts<br><span class="bold">197$</span></button>
-                    <button class="add-project">Add a project +</button>
+                    <button class="add-project modal-open">Add a project +</button>
                 </div>
                 <div class="export-section">
                     <p>You can save contacts to Excel</p>
@@ -450,6 +452,50 @@
             </div>
         </footer>
     </div>
+
+    <div class="modal-window">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="modal-close">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </div>
+            <form class="modal-form">
+                <div class="form-block">
+                    <input type="text" placeholder="Name of project" class="project-name">
+                    <input type="text" placeholder="Revenue for 6 months" class="project-revenue">
+                    <div class="proposal-format">
+                        <p class="proposal-title">Proposal format</p>
+                        <div class="proposal-options">
+                            <div class="proposal-option">
+                                <p>Sale of business</p>
+                            </div>
+                            <div class="proposal-option active">
+                                <p>Investment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Your name" class="form-name">
+                    <input type="text" placeholder="Phone" class="form-phone">
+                    <input type="text" placeholder="Email" class="form-email">
+                    <input type="text" placeholder="Website" class="form-website">
+                    <input type="text" placeholder="Youtube" class="form-youtube">
+                </div>
+                <div class="form-block">
+                    <input type="text" placeholder="Project cost" class="project-cost">
+                    <select name="category-select" id="category-select">
+                        <option value="Choose a category">Choose a category</option>
+                        <option value="Cafe">Cafe</option>
+                        <option value="Spa">Spa</option>
+                    </select>
+                    <textarea rows="6" cols="20" wrap="hard" class="form-area" placeholder="">Areas of investment :</textarea>
+                    <button class="buy-contacts">Apply</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>

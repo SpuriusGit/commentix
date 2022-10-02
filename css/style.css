@@ -153,6 +153,9 @@ button {
     background-repeat: no-repeat;
     background-position: center;
 }
+.filter-panel .buy-contacts {
+    display: none;
+}
 .filter-panel {
     background-color: #fff;
     border-radius: 15px;
@@ -560,4 +563,118 @@ body.pricing .filter-item-text.investors-mode {
 
 .footer-copyright-md {
     display: none;
+}
+
+.form-block {
+    padding: 10px;
+    width: 50%;
+}
+
+.form-block input {
+    border: none;
+    border-bottom: 1px solid #1F8A70;
+    height: 30px;
+    width: 100%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    color: #07131B;
+    opacity: 0.5;
+    padding: 20px 0px;
+}
+
+.form-block .proposal-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #07131B;
+    margin: 10px 0px;
+}
+.proposal-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.proposal-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    border: 1px solid #1F8A70;
+    border-radius: 12px;
+    padding: 0px 3px;
+    margin: 10px 0px;
+}
+
+.proposal-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+}
+
+.proposal-option.active {
+    background-color: #1A7296;
+    border-radius: 9px;
+    height: 26px;
+}
+.proposal-option.active p {
+    color: #fff;
+}
+
+.proposal-option p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #1A7296;
+}
+
+#category-select {
+    background-color: #A8DADB;
+    box-shadow: 0px 0px 4px rgba(0, 5, 17, 0.06), 0px 4px 8px rgba(0, 5, 15, 0.15), inset 0px 1px 0px rgba(111, 213, 255, 0.12);
+    border-radius: 29px;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0px;
+}
+.form-area {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    height: calc(100% - 150px);
+    width: 100%;
+    resize: none;
+    padding: 5px;
+    margin: 10px 0px;
+    border: 1px solid #A8DADB;
+    box-shadow: 0px 0px 4px rgba(0, 5, 17, 0.06), 0px 4px 8px rgba(0, 5, 15, 0.15), inset 0px 1px 0px rgba(111, 213, 255, 0.12);
+    border-radius: 12px;
+}
+
+.form-block .buy-contacts {
+    height: 35px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(100% - 100px);
 }
