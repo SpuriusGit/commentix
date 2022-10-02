@@ -2,8 +2,17 @@ const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
 
 tabs.forEach(tab => {
+  const currentMode = document.querySelector(tab.dataset.tabTarget);
+  if (currentMode.className === 'active') {
+    document.body.classList.add((tab.dataset.tabTarget).slice(1));
+  }
+
   tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
+    const target = document.querySelector(tab.dataset.tabTarget);
+
+    document.body.className = '';
+    document.body.classList.add((tab.dataset.tabTarget).slice(1));
+
     tabContents.forEach(tabContent => {
       tabContent.classList.remove('active')
     })
