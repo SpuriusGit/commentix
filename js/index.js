@@ -56,10 +56,14 @@ filterIcon.addEventListener('click', () => {
 
 
 // modal 
+const modalOpen = document.querySelectorAll('.modal-open');
 
-document.querySelector('.modal-open').addEventListener('click', () => {
-  document.querySelector('.modal-window').classList.add('active');
-});
+for(let i of modalOpen) {
+  i.addEventListener('click', () => {
+    document.querySelector('.modal-window').classList.add('active');
+  });
+}
+
 document.querySelector('.modal-background').addEventListener('click', () => {
   document.querySelector('.modal-window').classList.remove('active');
 });
