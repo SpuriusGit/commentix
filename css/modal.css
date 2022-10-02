@@ -81,6 +81,7 @@
 }
 @media (max-width: 768px) {
     .modal-content {
+        top: 50%;
         width: 320px;
         box-sizing: content-box;
     }
