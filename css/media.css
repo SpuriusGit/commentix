@@ -107,17 +107,34 @@
     body.pricing .offers-block {
         justify-content: space-around;
     }
+    .navbar-block h2 {
+        text-align: left;
+    }
  }
 
  @media (max-width: 1100px) { 
     .swiper {
         border-radius: 30px;
     }
-    .navbar-block h2 {
-        text-align: left;
-    }
     .swiper-wrapper {
         padding-top: 0;
+    }
+    body.pricing .content {
+        padding-top: 50px;
+    }
+    body.pricing .add-button-m {
+        position: absolute;
+        top: 0px;
+        background-color: #fff;
+        color: #1A7296;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 100px;
+        border-radius: 9px;
+        border: none;
+        left: 68%;
     }
 }
 
@@ -149,6 +166,23 @@
  }
 
  @media (max-width: 768px) { 
+    body.pricing .add-button-m {
+        position: absolute;
+        top: -50px;
+        background-color: #fff;
+        color: #1A7296;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 100px;
+        border-radius: 9px;
+        border: none;
+        left: calc(100% - 100px);
+    }
+    body.pricing .content {
+        padding-top: 0px;
+    }
     .export-section {
         display: none;
     }
@@ -178,11 +212,10 @@
         margin-bottom: 30px;
     }
     .filter-panel {
-        left: calc(100% - 380px);
         top: -15px;
         min-width: auto;
         width: 200px;
-        left: calc(100% - 205px);
+        left: calc(100% - 325px);
     }
     .filter-panel.active {
         border-radius: 12px 0px 12px 12px;
